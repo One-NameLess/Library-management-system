@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD BIGGEST LIBRARY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.png" class="favicon">
+</head>
+<body>
+    <!-- -----nav---- -->
+   <section class="header">
+        <nav class="logo">
+            <div class="logo-back">
+                <span class="logo-text">
+                    <a id="w1" href="#"><Strong>W</Strong>orld</a>
+                    <a id="b1" href="#"><Strong>B</Strong>iggest</a>
+                    <a id="l1" href="#"><Strong>L</Strong>ibrary</a>
+                </span>
+            </div>
+            <div class="nav-links" id="navLinks">
+               <ion-icon name="close-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html" class="active">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="dropdown">
+                        <a id="catalog-link">BOOKS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="electrician.html">ELECTRICIAN</a></li>
+                            <li><a href="welder.html">WELDER</a></li>
+                            <li><a href="fitter.html">FITTER</a></li>
+                            <li><a href="copa.html">COPA</a></li>
+                            <li><a href="mmv.html">MMV</a></li>
+                            <li><a href="surveyor.html">SURVEYOR</a></li>
+                            <li><a href="sewing.html">SEWING</a></li>
+                            <li><a href="wiremen.html">WIREMEN</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+           <ion-icon name="menu-outline" onclick="showMenu()"></ion-icon>
+        </nav>
+   </section>
+<!----anime---->
+    <section class="animation">
+        <div class="banner">
+            <div class="slider" style="--quantity:8">
+                <div class="item" style="--position:1"><img src="Photo/photo1.jpg" alt="#"></div>
+                <div class="item" style="--position:2"><img src="Photo/photo2.jpg" alt="#"></div>
+                <div class="item" style="--position:3"><img src="Photo/photo3.jpg" alt="#"></div>
+                <div class="item" style="--position:4"><img src="Photo/photo4.jpg" alt="#"></div>
+                <div class="item" style="--position:5"><img src="Photo/photo5.jpg" alt="#"></div>
+                <div class="item" style="--position:6"><img src="Photo/photo6.jpg" alt="#"></div>
+                <div class="item" style="--position:7"><img src="Photo/photo7.jpg" alt="#"></div>
+                <div class="item" style="--position:8"><img src="Photo/photo8.jpg" alt="#"></div>
+                <!-- <div class="item" style="--position:9"><img src="Photo/photo9.jpg" alt="#"></div>
+                <div class="item" style="--position:10"><img src="Photo/photo10.jpg" alt="#"></div> -->
+            </div>
+            <!-- ------textbox----- -->
+            <div class="text-box">
+                <h1>Welcome to the World's Biggest Library System</h1>
+                <p>Your gateway to limitless knowledge, unparalleled resources,<br> and a community of lifelong learners.</p>
+                <a href="about.html" class="hero-btn click-effect-a">Visit Us To Know More</a>
+            </div>
+        </div>
+    </section>
+    <!-- --------library-categories------- -->
+    <section class="library">
+        <h2>Explore Our Library</h2>
+       <div class="library-categories">
+            <div class="category">
+                <img src="Photo/fiction.jpg" alt="Fiction">
+                <h3>Fiction</h3>
+                <p>Discover novels, short stories, and fictional works that captivate your imagination.</p>
+            </div>
+            <div class="category">
+                <img src="Photo/nonfiction.jpg" alt="Non-Fiction">
+                <h3>Non-Fiction</h3>
+                <p>Explore biographies, self-help books, and historical accounts.</p>
+            </div>
+            <div class="category">
+                <img src="Photo/journals.jpg" alt="Academic Journals">
+                <h3>Academic Journals</h3>
+                <p>Access the latest research papers and academic writings.</p>
+            </div>
+            <div class="category">
+                <img src="Photo/ebooks.jpg" alt="E-Books">
+                <h3>E-Books</h3>
+                <p>Read your favorite books on the go with our digital library.</p>
+              </div>
+        </div>
+    </section>
+    <!-- ---------Filter Library Resources---------- -->
+    <!-- <section class="filter-section">
+        <h2>Filter Library Resources</h2>
+        <form>
+            <input type="text" placeholder="Search by title or author">
+            <select>
+                <option value="all">All Categories</option>
+                <option value="fiction">Fiction</option>
+                <option value="nonfiction">Non-Fiction</option>
+                <option value="journals">Journals</option>
+                <option value="ebooks">E-Books</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </section> -->
+   <!-- ---------library events--------- -->
+   <section class="library-events">
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>
+                <strong>Event:</strong> Book Discussion - "1984" by George Orwell <br>
+                <strong>Date:</strong> March 25, 2025
+            </li>
+            <li>
+                <strong>Event:</strong> Workshop - "Digital Library Navigation" <br>
+                <strong>Date:</strong> April 10, 2025
+            </li>
+        </ul>
+   </section>
+   <!-- ---------member reviews--------- -->
+   <section class="review-section">
+    <div class="member-reviews">
+        <h2>What Our Members Are Saying</h2>
+        <div class="row">
+            <div class="review">
+                <img src="Photo/member1.jpg">
+                <p>"The library's digital collection is fantastic! Highly recommend exploring it." - <strong>Meera Sen</strong></p>
+                <div class="r-stars">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="review">
+                <img src="Photo/member2.jpeg">
+                <p>"Amazing selection of journals and e-books!" - <strong>Jane Smith</strong></p>
+                <div class="r-stars">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star-half-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!-- ---------join our library--------- -->
+    <section class="join-library">
+        <h2>Explore Our Library</h2>
+        <em><p>Access thousands of unique resources and enjoy members-only perks. Join us today for an unmatched experience!</p></em>
+        <a href="explore.html" class="hero-btn click-effect-a">Explore Now</a>
+    </section>
+    <!-- ---------contact us--------- -->
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit" class="click-effect-button">Send Message</button>
+        </form>
+    </section>
+    <!-- --------footer--------- -->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <span class="logo-text">
+                <a id="w1" href="#"><Strong>W</Strong>orld</a>
+                <a id="b1" href="#"><Strong>B</Strong>iggest</a>
+                <a id="l1" href="#"><Strong>L</Strong>ibrary</a>
+            </span>
+            <p class="gradient">Unlock the doors to infinite knowledge.</p>
+          </div>
+          <div class="footer-links">
+            <div class="links-column">
+              <h4 class="mission-link">Quick Links</h4>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="links-column">
+              <h4 class="mission-link">Resources</h4>
+              <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact-us">Support</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social">
+            <h4 class="mission-link">Connect with Us</h4>
+            <div class="social-icons">
+              <a href="#" data-name="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#" data-name="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#" data-name="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#" data-name="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <hr class="custom-hr">
+        <div class="footer-credit">
+          <p>© 2025 World's Biggest Library. All rights reserved.</p>
+          <p>Images provided by <a href="http://www.freepik.com" target="_blank">Designed by Freepik</a></p>
+          <p id="heart">
+            Made with <ion-icon name="heart-outline"></ion-icon> by <span>COPA003</span>
+          </p>
+          <div id="popup" class="hidden">Thank You!</div>
+        </div>
+    </footer>
+    <!-- ----------javascript--------- -->
+    <script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const slider = document.querySelector('.banner .slider');
+    const totalCards = document.querySelectorAll('.slider .item').length;
+    const angleStep = 360 / totalCards;
+
+    let angle = 0;
+    let paused = false;
+
+    function rotateCarousel() {
+      if (!paused) {
+        slider.style.transform = `perspective(1000px) rotateY(${angle}deg)`;
+        angle = (angle + 1) % 360;
+
+        if (angle % angleStep === 0) {
+          paused = true;
+          setTimeout(() => {
+            paused = false;
+            requestAnimationFrame(rotateCarousel);
+          }, 1000);
+          return;
+        }
+      }
+
+      requestAnimationFrame(rotateCarousel);
+    }
+
+    rotateCarousel();
+  });
+</script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
