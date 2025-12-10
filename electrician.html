@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <base href="/Library-management-system/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORLD BIGGEST LIBRARY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Photo/favicon.png">
+</head>
+<body>
+    <!-- -----nav---- -->
+   <section class="header-electrician">
+        <nav class="logo">
+            <div class="logo-back">
+              <span class="logo-text">
+                  <a id="w1" href="#"><Strong>W</Strong>orld</a>
+                  <a id="b1" href="#"><Strong>B</Strong>iggest</a>
+                  <a id="l1" href="#"><Strong>L</Strong>ibrary</a>
+              </span>
+            </div>
+            <div class="nav-links" id="navLinks">
+               <ion-icon name="close-outline" onclick="hideMenu()"></ion-icon>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="explore.html">EXPLORE</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li class="dropdown">
+                      <a id="catalog-link" class="active">BOOKS</a>
+                     <ul class="dropdown-menu">
+                          <li><a href="electrician.html">ELECTRICIAN</a></li>
+                          <li><a href="welder.html">WELDER</a></li>
+                          <li><a href="fitter.html">FITTER</a></li>
+                          <li><a href="copa.html">COPA</a></li>
+                          <li><a href="mmv.html">MMV</a></li>
+                          <li><a href="surveyor.html">SURVEYOR</a></li>
+                          <li><a href="sewing.html">SEWING</a></li>
+                          <li><a href="wiremen.html">WIREMEN</a></li>
+                      </ul>
+                  </li>
+                </ul>
+            </div>
+           <ion-icon name="menu-outline" onclick="showMenu()"></ion-icon>
+        </nav>
+        <!-- ----------slider-banner------- -->
+
+      <!-- ----------slider-banner-end------- -->
+        <!-- ------textbox----- -->
+        <div class="book-box">
+            <h1>BOOKS</h1>
+            <p>Explore a collection of skilled trade books featuring electricians, welders,<br> COPA professionals, fitters, MMV technicians, wiremen, sewing experts, and surveyors, all essential for shaping our world.</p>
+        </div>
+    </section>
+  <!-- ----books---- -->
+   <section class="books">
+    <!-- product starts here -->
+        <h3>Our Product</h3>
+        <div class="product1">
+          <!-- {% for item in item %} -->
+            <div>
+                <img src="{{ item.image.url }}" alt="">
+                <h4>{{item.name }}</h4>
+                <h5>{{item.description}}</h5>
+                <p><strong>Price:</strong>{{item.price}}</p>
+                <a href="/item-enroll/{{item.id}}"><button class="click-btn-add">Order Now</button></a>
+                
+            </div>
+            <!-- {% endfor %} -->
+            
+        </div>
+    </section>
+    <!-- Right Side Cart -->
+    <section>
+      <div class="icon-fixed">
+          <ion-icon name="cart-outline" class="cart-icon" onclick="toggleCart()"></ion-icon>
+          <strong class="items-number1">0</strong>
+      </div>
+      <div class="right-cart">
+        <h3 class="mission-cart">Your Cart <strong class="items-number">0</strong></h3>
+          <div class="cart-items-wrapper"> 
+              <ul class="cart-items"></ul>
+          </div>
+          <div class="cart-footer">
+            <p class="cart-total"><strong>Total:</strong>₹0</p>
+            <button class="cart-clear click-effect-button">Clear</button> 
+          </div>
+          <a href="cart.html" class="checkout-btn click-effect-a">Checkout</a> 
+      </div>
+    </section>
+    <!-- product ends here -->
+  <!-- --------footer--------- -->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <span class="logo-text">
+                <a id="w1" href=""><Strong>W</Strong>orld</a>
+                <a id="b1" href=""><Strong>B</Strong>iggest</a>
+                <a id="l1" href=""><Strong>L</Strong>ibrary</a>
+            </span>
+            <p class="gradient">Unlock the doors to infinite knowledge.</p>
+          </div>
+          <div class="footer-links">
+            <div class="links-column">
+              <h4 class="mission-link">Quick Links</h4>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+            <div class="links-column">
+              <h4 class="mission-link">Resources</h4>
+              <ul>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact-us">Support</a></li>
+                <li><a href="explore.html">Explore</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-social">
+            <h4 class="mission-link">Connect with Us</h4>
+            <div class="social-icons">
+              <a href="#" data-name="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#" data-name="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a href="#" data-name="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#" data-name="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <hr class="custom-hr">
+        <div class="footer-credit">
+          <p>© 2025 World's Biggest Library. All rights reserved.</p>
+          <p>Images provided by <a href="http://www.freepik.com" target="_blank">Designed by Freepik</a></p>
+          <p id="heart">
+            Made with <ion-icon name="heart-outline"></ion-icon> by <span>COPA003</span>
+          </p>
+          <div id="popup" class="hidden">Thank You!</div>
+        </div>
+    </footer>
+    <!-- ----------javascript--------- -->
+    <script src="javascript.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
