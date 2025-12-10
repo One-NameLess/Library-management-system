@@ -1714,7 +1714,7 @@ nav ion-icon {
 .header-surveyor {
     height: 70vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Photo/surveyor_background.webp);
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Photo/surveyor_background.jpg);
     background-position: center;
     background-size: cover;
 }
